@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --headerFont: "DM Serif Display", sans-serif;
+    --textFont: "Karla", sans-serif;
+}
+
+/* Header Styling */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 30px;
+}
+
+/* Banner Styling */
+.banner{
+    height: 500px;
+    background-image: url(images/image-intro-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header & Paragraph tag styling */
+h1, h2, h3{
+    font-family: var(--headerFont);
+    font-weight: 400;
+}
+
+p{
+    font-family: var(--textFont);
+    font-weight: 400;
+    /* font-size: 16px; */
+}
+
+/* Intro Styling */
+.intro{
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+    padding: 100px 30px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.intro h1{
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+    /* text-align: center; */
+}
+
+.intro p{
+    margin-bottom: 25px;
+}
+
+.intro button{
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: var(--textFont);
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.intro button:hover{
+    background-color: #fff;
+    color: hsl(256, 26%, 20%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Info Styling */
+.info{
+    background-color: #fff;
+    margin: 150px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center; */
+}
+
+.info h2{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.info::before{ 
+    Content:"";
+    Display: block;
+    Height: 1px;
+    Margin-bottom: 30px;
+    Width: 150px;
+    background-color: hsl(273, 4%, 51%);
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.boxes p{
+    color: hsl(273, 4%, 51%);
+    line-height: 25px;
+}
+
+#snappy, #prices, #people{
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+
+.boxes .box1 h3, .boxes .box2 h3, .boxes .box3 h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Findoutmore Styling */
+.fom_section{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.findoutmore{
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+    padding: 80px 30px;
+    width: 90%;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.findoutmore h2{
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+
+.findoutmore button{
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: var(--textFont);
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.findoutmore button:hover{
+    background-color: #fff;
+    color: hsl(256, 26%, 20%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer{
+    background-color: hsl(0, 0%, 98%);
+    padding: 100px 25px;
+}
+
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+#footer_logo{
+    margin-bottom: 30px;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+    width: 90%;
+    justify-content: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid hsl(0, 3%, 66%);
+}
+
+.icons img:hover{
+   cursor: pointer;
+}
+
+.txt{
+    font-family: var(--textFont);
+    font-weight: 700;
+    color: hsl(273, 4%, 51%);
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.company p, .help p, .contact p, .others p{
+    margin-bottom: 40px;
+}
+
+.company a, .help a, .contact a, .others a{
+    color: #000;
+    font-family: var(--textFont);
+    font-weight: 700;
+    text-decoration: none;
+}

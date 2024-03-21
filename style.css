@@ -49,9 +49,19 @@ p{
     padding: 100px 30px;
     text-align: center;
     line-height: 25px;
+
+}
+
+#intro_patternLeft{
+    margin-top: -100px;
+    right: 62%;
+    position: absolute;
+    z-index: 0;
 }
 
 .intro h1{
+    z-index: 10;
+    position: relative;
     margin-bottom: 20px;
     font-size: 45px;
     line-height: 45px;

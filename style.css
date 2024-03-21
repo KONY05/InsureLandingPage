@@ -198,9 +198,20 @@ p{
 footer{
     background-color: hsl(0, 0%, 98%);
     padding: 100px 25px;
+    /* border: 1px solid black; */
+    position: relative;
+    z-index: 20;
+}
+
+#footer_pattern{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
 }
 
 .footer_container{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -21,6 +21,16 @@ header{
     padding: 0 30px;
 }
 
+nav{
+    opacity: 0;
+    /* position: absolute; */
+}
+
+#nav_btn{
+    opacity: 0;
+    position: absolute;
+}
+
 /* Banner Styling */
 .banner{
     height: 500px;
@@ -263,4 +273,71 @@ footer{
     font-family: var(--textFont);
     font-weight: 700;
     text-decoration: none;
+}
+
+/* Media Query */
+@media (min-width: 768px){
+
+/* Desktop Header Styling */
+    header{
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-around;
+        padding: 0 0;
+    }
+
+    .nav_desktop{
+        display: flex;
+        align-items: center;
+    }
+
+    nav{
+        opacity: 1;
+        /* border: 1px solid black; */
+        margin-right: 30px;
+    }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 30px;
+    }
+
+    nav ul li{
+        font-family: var(--textFont);
+        font-weight: 700;
+        color: hsl(273, 4%, 51%);
+        font-size: 14px;
+    }
+
+    nav ul li:hover{
+        color: hsl(256, 26%, 20%);
+        cursor: pointer;
+    }
+
+    #nav_btn{
+    opacity: 1;
+    position: relative;
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: 2px solid hsl(256, 26%, 20%);
+    color: hsl(256, 26%, 20%);
+    font-family: var(--textFont);
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    }
+
+    #nav_btn:hover{
+        background-color: hsl(256, 26%, 20%);
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        opacity: 0;
+        position: absolute;
+    }
 }

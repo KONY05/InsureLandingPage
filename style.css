@@ -54,7 +54,8 @@ p{
 
 #intro_patternLeft{
     margin-top: -100px;
-    right: 62%;
+    /* right: 62%; */
+    left: 0px;
     position: absolute;
     z-index: 0;
 }
@@ -88,6 +89,12 @@ p{
     color: hsl(256, 26%, 20%);
     font-weight: 700;
     cursor: pointer;
+}
+
+#intro_patternRight{
+    position: absolute;
+    z-index: 0;
+    right: 0px;
 }
 
 /* Info Styling */

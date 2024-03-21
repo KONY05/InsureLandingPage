@@ -224,6 +224,7 @@ footer{
     /* border: 1px solid black; */
     position: relative;
     z-index: 20;
+    overflow: hidden;
 }
 
 #footer_pattern{
@@ -246,13 +247,18 @@ footer{
     margin-bottom: 30px;
 }
 
+.footer_insure{
+    width: 90%;
+    border-bottom: 1px solid hsl(0, 3%, 66%);
+}
+
 .icons{
     display: flex;
     gap: 15px;
-    width: 90%;
+    /* width: 90%; */
     justify-content: center;
     padding-bottom: 40px;
-    border-bottom: 1px solid hsl(0, 3%, 66%);
+    
 }
 
 .icons img:hover{
@@ -354,6 +360,8 @@ footer{
         position: absolute;
     }
 
+    /* Banner Styling */
+
     .banner{
         /* border: 1px solid black; */
         float: right;
@@ -367,6 +375,7 @@ footer{
         right: 100px;
     }
 
+    /* Intro Styling */
     .intro{
         padding-top: 80px;
         /* overflow: hidden; */
@@ -411,6 +420,7 @@ footer{
         margin-top: -38px;
     }
 
+    /* Info Styling */
     .info_container::before{
         margin-top: 150px;
     }
@@ -435,13 +445,15 @@ footer{
         text-align: left;
     }
 
+    /* Findoutmore Styling */
     .findoutmore{
         display: flex;
         align-items: center;
         flex-direction: row;
         column-gap: 10rem;
         width: 85%;
-        padding: 65px 30px;
+        height: 250px;
+        /* padding: 65px 30px; */
     }
 
     .findoutmore h2{
@@ -463,10 +475,26 @@ footer{
         top: 0;
     }
 
+    /* Footer Styling */
     #footer_patterndesktop{
         opacity: 1;
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    .footer_insure{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .footer_links{
+        width: 90%;
+        position: relative;
+        /* border: 1px solid black; */
+        display: flex;
+        gap: 150px;
     }
 }

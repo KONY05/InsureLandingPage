@@ -49,7 +49,6 @@ p{
     padding: 100px 30px;
     text-align: center;
     line-height: 25px;
-
 }
 
 #intro_patternLeft{
@@ -151,16 +150,27 @@ p{
     margin-bottom: 150px;
 }
 
+#fom_pattern{
+    position: absolute;
+    z-index: 0;
+    right: 0px;
+    top: 0px;
+}
+
 .findoutmore{
+    position: relative;
     background-color: hsl(256, 26%, 20%);
     color: hsl(0, 0%, 98%);
     padding: 80px 30px;
     width: 90%;
     text-align: center;
+    overflow: hidden;
     /* border: 1px solid black; */
 }
 
 .findoutmore h2{
+    position: relative;
+    z-index: 15;
     font-size: 45px;
     line-height: 45px;
     margin-bottom: 30px;

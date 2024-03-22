@@ -76,6 +76,10 @@ p{
     position: absolute;
 }
 
+#intro_patternRightdesktop{
+    left: 0;
+}
+
 .intro h1{
     z-index: 10;
     position: relative;
@@ -382,7 +386,6 @@ footer{
     /* Intro Styling */
     .intro{
         padding-top: 80px;
-        /* overflow: hidden; */
     }
     
     .intro_desktop{

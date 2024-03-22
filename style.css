@@ -497,3 +497,11 @@ footer{
         gap: 150px;
     }
 }
+
+@media (max-width: 360px){
+    #intro_patternLeftdesktop{
+        /* opacity: 1; */
+        left: 0;
+        position: absolute;
+    }
+}
